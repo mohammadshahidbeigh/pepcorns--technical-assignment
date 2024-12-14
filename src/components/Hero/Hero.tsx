@@ -61,7 +61,7 @@ const Hero = () => {
           economy
         </p>
 
-        <div className="flex flex-wrap gap-3 mb-8">
+        <div className="flex flex-wrap gap-1 sm:gap-2 md:gap-3 mb-6 sm:mb-8">
           {[
             "B2B",
             "SUBSCRIPTION",
@@ -74,7 +74,17 @@ const Hero = () => {
           ].map((tag) => (
             <span
               key={tag}
-              className="px-4 py-2 bg-gradient-to-r from-green-400 to-blue-500 text-white font-medium rounded-full text-sm shadow-md transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer"
+              className="px-1.5 py-0.5 text-[10px] sm:px-3 sm:py-1 sm:text-xs md:px-4 md:py-2 md:text-sm 
+      bg-gradient-to-r from-green-400 to-blue-500 
+      text-white font-medium rounded-full 
+      shadow-sm hover:shadow-md 
+      transform transition duration-300 
+      hover:scale-105 
+      cursor-pointer 
+      inline-block 
+      text-center 
+      truncate 
+      max-w-[150px]"
             >
               {tag}
             </span>
