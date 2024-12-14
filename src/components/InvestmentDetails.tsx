@@ -8,14 +8,6 @@ const InvestmentDetails = () => {
     (state: RootState) => state.investment.currentInvestment
   );
 
-  /*************  ✨ Codeium Command ⭐  *************/
-  /**
-   * Format a number as a US dollar amount with no decimal places.
-   *
-   * @param {number} amount
-   * @returns {string}
-   */
-  /******  a408aaa7-5327-4b0d-918c-4b633e282479  *******/
   const formatCurrency = (amount: number) => {
     return new Intl.NumberFormat("en-US", {
       style: "currency",

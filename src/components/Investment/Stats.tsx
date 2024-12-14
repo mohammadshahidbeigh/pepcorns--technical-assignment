@@ -6,7 +6,7 @@ const Stats = () => {
     <motion.div
       initial={{opacity: 0, y: 20}}
       animate={{opacity: 1, y: 0}}
-      className="grid grid-cols-1 md:grid-cols-3 gap-8 bg-white p-6 rounded-lg shadow-sm"
+      className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-8 bg-white p-6 rounded-lg shadow-sm"
     >
       <div className="text-center">
         <DollarSign className="h-8 w-8 mx-auto text-green-500 mb-2" />
