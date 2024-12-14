@@ -1,5 +1,5 @@
-import React from 'react';
-import { Info } from 'lucide-react';
+import React from "react";
+import {Info} from "lucide-react";
 
 interface DealTerm {
   label: string;
@@ -8,12 +8,12 @@ interface DealTerm {
 
 const DealTerms: React.FC = () => {
   const terms: DealTerm[] = [
-    { label: 'Security type', value: 'SAFE' },
-    { label: 'Valuation cap', value: '$20M' },
-    { label: 'Funding goal', value: '$50K / $618K' },
-    { label: 'Minimum investment', value: '$100' },
-    { label: 'Maximum investment', value: '$300K' },
-    { label: 'Deadline', value: 'December 10, 2024' }
+    {label: "Security type", value: "SAFE"},
+    {label: "Valuation cap", value: "$20M"},
+    {label: "Funding goal", value: "$50K / $618K"},
+    {label: "Minimum investment", value: "$100"},
+    {label: "Maximum investment", value: "$300K"},
+    {label: "Deadline", value: "December 10, 2024"},
   ];
 
   return (
@@ -30,7 +30,7 @@ const DealTerms: React.FC = () => {
           </div>
         ))}
       </div>
-      <button className="w-full mt-6 py-3 bg-gray-50 text-gray-700 rounded-lg hover:bg-gray-100">
+      <button className="w-full mt-6 py-3 bg-blue-100 text-gray-700 rounded-lg hover:bg-gray-100">
         How it works
       </button>
     </div>
