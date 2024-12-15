@@ -1,11 +1,13 @@
-import React from 'react';
-import { navigationItems } from '../../data/navigation';
-import { Search } from 'lucide-react';
+import React from "react";
+import {navigationItems} from "../../data/navigation";
+import {Search} from "lucide-react";
 
 const MobileNavigation: React.FC = () => {
   return (
-    <div className="fixed inset-0 z-50 bg-white md:hidden">
+    <div className="fixed inset-0 z-50 bg-white md:hidden h-screen overflow-y-auto">
+      {/* Container for all content */}
       <div className="p-4">
+        {/* Search Bar */}
         <div className="mb-4">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
@@ -17,17 +19,14 @@ const MobileNavigation: React.FC = () => {
           </div>
         </div>
 
+        {/* Navigation Sections */}
         <div className="space-y-6">
           {navigationItems.map((section) => (
             <div key={section.title} className="border-b border-gray-200 pb-6">
               <h2 className="text-lg font-semibold mb-4">{section.title}</h2>
               <div className="space-y-4">
                 {section.items.map((item) => (
-                  <a
-                    key={item.title}
-                    href={item.href}
-                    className="block"
-                  >
+                  <a key={item.title} href={item.href} className="block">
                     <div className="text-base font-medium text-gray-900">
                       {item.title}
                     </div>
@@ -43,6 +42,7 @@ const MobileNavigation: React.FC = () => {
           ))}
         </div>
 
+        {/* Action Buttons */}
         <div className="mt-6 space-y-4">
           <button className="w-full py-2 text-center text-gray-700 hover:text-gray-900">
             Log in
